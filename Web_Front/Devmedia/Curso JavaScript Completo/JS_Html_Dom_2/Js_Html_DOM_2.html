@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript HTML DOM - Document Object Model</title>
+</head>
+<body>
+  <h1>HTML DOM - Teste 01</h1>
+
+  <script type="text/JavaScript">
+    document.write(Date());
+  </script>
+  <br>
+  <h3 id="cabecalho">Hello World!</h3>
+
+  <script type="text/JavaScript">
+    var elementoCabecalho = document.getElementById("cabecalho");
+    elementoCabecalho.innerHTML = "Novo Conteúdo no Cabeçalho";
+  </script>
+  <br>
+  <h3>Troca de Imagens</h3>
+  <img id="MinhaImagem" src="pun_01.jpg" width="200" height="200"/>
+
+  <button id="btnTroca" onclick="Troca()">Troca</button>
+  <button id="btnTroca2" onclick="Troca2()">Troca 2</button>
+
+  <script type="text/JavaScript">
+    document.getElementById("MinhaImagem").src = "pun_02.jpg";
+    function Troca()
+    {
+        document.getElementById("cabecalho").innerHTML = "Hello World!";
+
+        document.getElementById("MinhaImagem").src = "pun_01.jpg";
+    }
+    function Troca2()
+    {
+        document.getElementById("cabecalho").innerHTML = "Novo Conteúdo no Cabeçalho";
+
+        document.getElementById("MinhaImagem").src = "pun_02.jpg";
+    }
+  </script>
+
+</body>
+</html>

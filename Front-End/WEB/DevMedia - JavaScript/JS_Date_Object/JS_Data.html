@@ -1,0 +1,38 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<title>JavaScript Data</title>
+	
+	<script type="text/JavaScript">
+		function TesteDate()
+		{
+			var DataAgora = new Date();
+			alert(DataAgora);
+		}
+		function TesteDate02()
+		{
+			var d = new Date();
+			alert(d.getFullYear());			
+		}
+		function TesteDate03()
+		{
+			var d = new Date();
+			d.setFullYear(2100,6,13);
+			alert(d);
+		}
+	</script>
+	
+</head>
+<body>
+	<p>
+		<button id = "demo" onclick = "TesteDate()">Click aqui e veja A Data atual</button>
+	</p>
+	<p>
+		<button id = "info" onclick = "TesteDate02()">Click aqui e veja o ANO atual</button>
+	</p>
+	<p>
+		<button id = "teste" onclick = "TesteDate03()">Click aqui</button>
+	</p>
+</body>
+</html>

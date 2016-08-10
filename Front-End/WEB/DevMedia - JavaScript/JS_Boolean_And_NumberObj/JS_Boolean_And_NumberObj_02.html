@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></metas>
+	<title>JavaScript Boolean e Number Objects</title>
+
+	<script type="text/javascript">
+		function TestBoolean()
+		{
+			var booleanTeste = new Boolean("0");
+			var x = booleanTeste.valueOf();
+			var y = Number.MAX_VALUE;
+			var num = 3.14159;
+			var n = num.toFixed(2);
+
+			alert("O Objeto é boleano : " + x);
+			alert("O numero máximo é: " + y);
+			alert(n);
+		}
+	</script>
+</head>
+<body>
+	<p>
+		<button id="demo" onclick="TestBoolean()">Clique Aqui! Manow!</button>
+	</p>
+</body>
+</html>

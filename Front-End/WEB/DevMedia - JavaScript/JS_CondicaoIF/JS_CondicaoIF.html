@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<title>JavaScript - Condição If</title>
+	<script type="text/JavaScript">
+		function conditionIf()
+		{
+			var x = 10;
+			var y = 10;
+			var result;
+			
+			if(x == y)
+			{
+				result = "x igual a y";
+			}else
+			{
+				result = "x não é igual a y";
+			}
+			document.getElementById("demo").innerHTML = result;
+		}
+	</script>
+</head>
+<body>
+	<p><button onclick="conditionIf()">Click Aqui!</button></p>
+	</br>
+	<p>A Resposta é: <span id="demo"></span></p>
+</body>
+</html>

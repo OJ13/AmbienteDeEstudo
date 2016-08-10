@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript RegExp Object</title>
+	<script type="text/JavaScript">
+		function TesteRegExp1()
+		{
+			var str = "Osmar JunIoR is Developer";
+			var padrao = /Junior/i;		/*i insensitive Case, ou seja não importa maiuscula ou minuscula*/
+			alert(str.match(padrao));
+		}
+		function TesteRegExp2()
+		{
+			var str = "Osmar Junior is Developer, BlackTrezeTec is a Company";
+			var padrao = /is/g;				/*Buscar todos com essa estrutura, esse modificador ,nesse caso em especifico, vai buscar as 2 ocorrenicas do is*/
+			alert(str.match(padrao));
+		}
+		function TesteRegExp3()
+		{
+			var padrao = new RegExp("Osmar","i");				/*Mesmo que os de cima, esse é o método*/
+			alert(padrao.test("Osmar Junior is a Developer"));	/*Deve retornar verdadeiro ou falso*/
+		}
+		function TesteRegExp4()
+		{
+			var padrao = new RegExp("IS","i");
+			alert(padrao.exec("Osmar Junior is a Developer, BlackTrezeTec Is your Company"));	/*Verifica e traz o valor,caso não exista retorna null*/
+		}
+	</script>
+</head>
+<body>
+<p>
+	<button id="btnShow" onclick="TesteRegExp1()">Clique Aqui</button>
+	
+	<button id="btnShow" onclick="TesteRegExp2()">Clique Aqui 2</button>
+	
+	<button id="btnShow" onclick="TesteRegExp3()">Clique Aqui 3</button>
+	
+	<button id="btnShow" onclick="TesteRegExp4()">Clique Aqui 4</button>
+	
+</p>
+</body>
+</html>

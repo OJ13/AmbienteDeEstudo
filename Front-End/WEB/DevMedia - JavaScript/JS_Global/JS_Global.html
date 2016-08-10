@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<title> JavaScript Global</title>
+	
+	<script type="text/JavaScript">
+	
+		function TesteGlobal01()
+		{
+			var resultado = "O 123 em NAN é " + isNaN(123) + "\n";
+			resultado = resultado + "O 3.14 dentro em NAN é " + isNaN(3.14) + "\n";
+			resultado = resultado + "O Osmar dentro em NAN é " + isNaN("Osmar"); 
+			
+			alert(resultado);
+		}
+		function TesteGlobal02()
+		{
+			var resultado = "O 123 em parseFloat é " + parseFloat(123) + "\n";
+			resultado = resultado + "O 3.14 dentro em parseFloat é " + parseFloat(3.14) + "\n";
+			resultado = resultado + "O Osmar dentro em parseFloat é " + parseFloat("Osmar");
+			
+			alert(resultado);
+		}
+		function TesteGlobal03()
+		{
+			var out = escape("Osmar Junior é Desenvolvedor!");
+			alert(out);
+		}
+	</script>
+	
+</head>
+<body>
+	<p>
+	<button id="btnTeste1" onclick="TesteGlobal01()">Clique para ver o Global 1</button>
+	</p>
+	<p>
+	<button id="btnTeste2" onclick="TesteGlobal02()">Clique para ver o Global 2</button>
+	</p>
+	<p>
+	<button id="btnTeste3" onclick="TesteGlobal03()">Clique para ver o Global 2</button>
+	</p>
+</body>
+</html>

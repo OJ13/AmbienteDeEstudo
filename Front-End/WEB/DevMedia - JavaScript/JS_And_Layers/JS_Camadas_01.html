@@ -1,0 +1,37 @@
+<!DOCTPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<title>JavaScript e Camadas</title>
+	<style type="text/css">
+		.h1Mouse
+		{
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 24px;
+			color: #0F0;
+		}
+		
+		.h1MouseOver
+		{
+			font-family: "Times New Roman", Times, serif;
+			font-size: 16px;
+			color: #F00;
+		}
+	</style>
+	
+	<script type="text/JavaScript">
+		function changeOver()
+		{
+			document.getElementById("myElement").className = "h1MouseOver";
+		}
+		function changeOut()
+		{
+		document.getElementById("myElement").className = "h1Mouse";
+		}
+	</script>
+	
+</head>
+<body>
+	<h1 id="myElement" name="myElement" class="h1Mouse" onMouseOver="changeOver()" onMouseOut="changeOut()">Está é uma linha que reage com o mouse pointer</h1>
+</body>
+</html>

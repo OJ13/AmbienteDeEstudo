@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<title>JavaScript - Try - Catch</title>
+	<script type="text/JavaScript">
+		function ShowMessage()
+		{
+			try
+			{
+				alert("Hello World!");
+			}
+			catch(erro)
+			{
+				txt = "Houve um erro nessa Página.\n\n";
+				txt += "Erro Descrição: " + erro.message;
+				alert(txt);
+			}
+			finally
+			{
+				document.getElementById("out").innerHTML = "Finalmente...";
+			}
+		}
+		
+		function TestShow()
+		{
+			try
+			{
+				var x = document.getElementById("userInput").value;
+				if(x == "")
+					throw "empty"
+				if(x > 10)
+					throw "Muito Alto"
+				if(x < 1)
+					throw "Muito Baixo"
+			}
+			catch(erro)
+			{
+				alert("Erro: " + erro);
+			}
+		}
+	</script>
+</head>
+<body>
+	<p><button onclick="ShowMessage()">Clique Aqui! Mano!</button></p>
+	</br>
+	<p><span id="out"></span></p>
+	</br>
+	<p>
+		Por Favor entre com um Numero de 1 a 10: </br>
+		<input id="userInput" type="text"> </br>
+		<button onclick="TestShow()">OK</button>
+	</P>
+</body>
+</html>

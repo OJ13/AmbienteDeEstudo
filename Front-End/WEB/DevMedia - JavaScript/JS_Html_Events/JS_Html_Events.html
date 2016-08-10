@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"></meta>
+  <title>JavaScript HTML Eventos</title>
+
+  <script type="text/JavaScript">
+    function TesteOnLoad()
+    {
+      alert("Hello World!!\n Página está carregada...");
+    }
+    function TesteshowKeyPress(event) //Para funcionar no firefox, precisa passar o argumento event
+    {
+      var x = event.which;
+      keychar = String.fromCharCode(x);
+
+      alert("A chave " + keychar + " foi pressionada");
+    }
+  </script>
+
+</head>
+<body onload="TesteOnLoad()">
+  <p>Teste onKeypress evento:
+    <input type="text" onkeypress="TesteshowKeyPress(event)"/>
+  </p>
+</body>
+</html>

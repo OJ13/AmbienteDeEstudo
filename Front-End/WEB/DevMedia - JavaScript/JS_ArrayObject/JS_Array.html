@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>JavaScript é fera</title>
+	
+	<script type="text/JavaScript">
+		function TesteArray01()
+		{
+			var fruta = new Array();
+			fruta[0] = "Maça";
+			fruta[1] = "Limão";
+			fruta[2] = "Laranja";
+			fruta[3] = "Morango";
+			
+			alert(fruta.length);
+		}
+		function TesteArray02()
+		{
+			var carro1 = ["Fiat", "Ford"];
+			var carro2 = ["Ferrari","BMW","Audi"];
+			var carroFinal = carro1.concat(carro2);
+			var out = "";
+			for(var i = 0; i < carroFinal.length; i++)
+			{
+				out = out + carroFinal[i] + "<br\>";
+			}
+			
+			document.getElementById("demo").innerHTML = out;
+		}
+	</script>
+</head>
+<body>
+	<button id="btnTeste01" onclick="TesteArray01()">Clique Aqui!</button>
+	<br/>
+	<p>
+	<button id="btnTeste02" onclick="TesteArray02()">Clique!</button>
+	</p>
+	<p>
+	<label id="demo">...</label>
+	</p>
+</body>
+</html>

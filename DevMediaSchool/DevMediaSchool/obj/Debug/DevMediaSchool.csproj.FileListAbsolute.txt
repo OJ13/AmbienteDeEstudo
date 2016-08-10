@@ -1,0 +1,6 @@
+C:\GTP Black\Aulas e Treinamentos\DevMediaSchool\DevMediaSchool\bin\DevMediaSchool.dll.config
+C:\GTP Black\Aulas e Treinamentos\DevMediaSchool\DevMediaSchool\bin\DevMediaSchool.dll
+C:\GTP Black\Aulas e Treinamentos\DevMediaSchool\DevMediaSchool\bin\DevMediaSchool.pdb
+C:\GTP Black\Aulas e Treinamentos\DevMediaSchool\DevMediaSchool\obj\Debug\DevMediaSchool.csprojResolveAssemblyReference.cache
+C:\GTP Black\Aulas e Treinamentos\DevMediaSchool\DevMediaSchool\obj\Debug\DevMediaSchool.dll
+C:\GTP Black\Aulas e Treinamentos\DevMediaSchool\DevMediaSchool\obj\Debug\DevMediaSchool.pdb

@@ -1,0 +1,10 @@
+D:\Users\osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_01_Hello_World\bin\Debug\Day_01_Hello_World.exe.config
+D:\Users\osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_01_Hello_World\bin\Debug\Day_01_Hello_World.exe.manifest
+D:\Users\osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_01_Hello_World\bin\Debug\Day_01_Hello_World.application
+D:\Users\osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_01_Hello_World\bin\Debug\Day_01_Hello_World.exe
+D:\Users\osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_01_Hello_World\bin\Debug\Day_01_Hello_World.pdb
+D:\Users\osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_01_Hello_World\obj\Debug\Day_00_Hello_World.csprojResolveAssemblyReference.cache
+D:\Users\osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_01_Hello_World\obj\Debug\Day_01_Hello_World.exe.manifest
+D:\Users\osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_01_Hello_World\obj\Debug\Day_01_Hello_World.application
+D:\Users\osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_01_Hello_World\obj\Debug\Day_01_Hello_World.exe
+D:\Users\osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_01_Hello_World\obj\Debug\Day_01_Hello_World.pdb

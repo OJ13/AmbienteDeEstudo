@@ -1,0 +1,6 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00005_PlusMinus\bin\Debug\HackerRank_00005_PlusMinus.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00005_PlusMinus\bin\Debug\HackerRank_00005_PlusMinus.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00005_PlusMinus\bin\Debug\HackerRank_00005_PlusMinus.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00005_PlusMinus\obj\Debug\HackerRank_00005_PlusMinus.csprojResolveAssemblyReference.cache
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00005_PlusMinus\obj\Debug\HackerRank_00005_PlusMinus.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00005_PlusMinus\obj\Debug\HackerRank_00005_PlusMinus.pdb

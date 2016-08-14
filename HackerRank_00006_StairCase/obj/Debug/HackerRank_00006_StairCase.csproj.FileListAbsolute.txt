@@ -1,0 +1,6 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00006_StairCase\bin\Debug\HackerRank_00006_StairCase.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00006_StairCase\bin\Debug\HackerRank_00006_StairCase.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00006_StairCase\bin\Debug\HackerRank_00006_StairCase.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00006_StairCase\obj\Debug\HackerRank_00006_StairCase.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00006_StairCase\obj\Debug\HackerRank_00006_StairCase.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00006_StairCase\obj\Debug\HackerRank_00006_StairCase.csprojResolveAssemblyReference.cache

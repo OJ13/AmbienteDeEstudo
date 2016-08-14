@@ -1,0 +1,6 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00003_AVryBigSum\bin\Debug\HackerRank_00003_AVryBigSum.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00003_AVryBigSum\bin\Debug\HackerRank_00003_AVryBigSum.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00003_AVryBigSum\bin\Debug\HackerRank_00003_AVryBigSum.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00003_AVryBigSum\obj\Debug\HackerRank_00003_AVryBigSum.csprojResolveAssemblyReference.cache
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00003_AVryBigSum\obj\Debug\HackerRank_00003_AVryBigSum.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00003_AVryBigSum\obj\Debug\HackerRank_00003_AVryBigSum.pdb

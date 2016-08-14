@@ -1,0 +1,6 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00004_DiagonalDifference\bin\Debug\HackerRank_00004_DiagonalDifference.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00004_DiagonalDifference\bin\Debug\HackerRank_00004_DiagonalDifference.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00004_DiagonalDifference\bin\Debug\HackerRank_00004_DiagonalDifference.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00004_DiagonalDifference\obj\Debug\HackerRank_00004_DiagonalDifference.csprojResolveAssemblyReference.cache
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00004_DiagonalDifference\obj\Debug\HackerRank_00004_DiagonalDifference.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HackerRank_00004_DiagonalDifference\obj\Debug\HackerRank_00004_DiagonalDifference.pdb

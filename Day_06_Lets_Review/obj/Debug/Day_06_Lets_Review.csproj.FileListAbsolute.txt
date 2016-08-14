@@ -1,0 +1,6 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_06_Lets_Review\bin\Debug\Day_06_Lets_Review.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_06_Lets_Review\bin\Debug\Day_06_Lets_Review.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_06_Lets_Review\bin\Debug\Day_06_Lets_Review.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_06_Lets_Review\obj\Debug\Day_06_Lets_Review.csprojResolveAssemblyReference.cache
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_06_Lets_Review\obj\Debug\Day_06_Lets_Review.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_06_Lets_Review\obj\Debug\Day_06_Lets_Review.pdb

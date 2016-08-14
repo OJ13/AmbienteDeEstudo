@@ -1,0 +1,6 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_05_Loops\bin\Debug\Day_05_Loops.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_05_Loops\bin\Debug\Day_05_Loops.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_05_Loops\bin\Debug\Day_05_Loops.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_05_Loops\obj\Debug\Day_05_Loops.csprojResolveAssemblyReference.cache
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_05_Loops\obj\Debug\Day_05_Loops.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_05_Loops\obj\Debug\Day_05_Loops.pdb

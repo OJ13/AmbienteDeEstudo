@@ -1,0 +1,6 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_04_Class_vs_Instance\bin\Debug\Day_04_Class_vs_Instance.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_04_Class_vs_Instance\bin\Debug\Day_04_Class_vs_Instance.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_04_Class_vs_Instance\bin\Debug\Day_04_Class_vs_Instance.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_04_Class_vs_Instance\obj\Debug\Day_04_Class_vs_Instance.csprojResolveAssemblyReference.cache
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_04_Class_vs_Instance\obj\Debug\Day_04_Class_vs_Instance.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_04_Class_vs_Instance\obj\Debug\Day_04_Class_vs_Instance.pdb

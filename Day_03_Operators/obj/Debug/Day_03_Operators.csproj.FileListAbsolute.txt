@@ -1,0 +1,6 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_03_Operators\bin\Debug\Day_03_Operators.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_03_Operators\bin\Debug\Day_03_Operators.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_03_Operators\bin\Debug\Day_03_Operators.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_03_Operators\obj\Debug\Day_03_Operators.csprojResolveAssemblyReference.cache
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_03_Operators\obj\Debug\Day_03_Operators.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_03_Operators\obj\Debug\Day_03_Operators.pdb

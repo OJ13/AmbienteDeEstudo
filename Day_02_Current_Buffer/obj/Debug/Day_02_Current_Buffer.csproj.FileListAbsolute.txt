@@ -1,0 +1,6 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_02_Current_Buffer\bin\Debug\Day_02_Current_Buffer.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_02_Current_Buffer\bin\Debug\Day_02_Current_Buffer.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_02_Current_Buffer\bin\Debug\Day_02_Current_Buffer.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_02_Current_Buffer\obj\Debug\Day_02_Current_Buffer.csprojResolveAssemblyReference.cache
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_02_Current_Buffer\obj\Debug\Day_02_Current_Buffer.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_02_Current_Buffer\obj\Debug\Day_02_Current_Buffer.pdb

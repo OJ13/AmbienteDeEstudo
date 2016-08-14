@@ -1,0 +1,6 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_03_Intro_to_Conditional_Statements\bin\Debug\Day_03_Intro_to_Conditional_Statements.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_03_Intro_to_Conditional_Statements\bin\Debug\Day_03_Intro_to_Conditional_Statements.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_03_Intro_to_Conditional_Statements\bin\Debug\Day_03_Intro_to_Conditional_Statements.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_03_Intro_to_Conditional_Statements\obj\Debug\Day_03_Intro_to_Conditional_Statements.csprojResolveAssemblyReference.cache
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_03_Intro_to_Conditional_Statements\obj\Debug\Day_03_Intro_to_Conditional_Statements.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_03_Intro_to_Conditional_Statements\obj\Debug\Day_03_Intro_to_Conditional_Statements.pdb

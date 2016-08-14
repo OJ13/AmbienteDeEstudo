@@ -1,0 +1,5 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_07_Arrays\bin\Debug\Day_07_Arrays.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_07_Arrays\bin\Debug\Day_07_Arrays.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_07_Arrays\bin\Debug\Day_07_Arrays.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_07_Arrays\obj\Debug\Day_07_Arrays.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_07_Arrays\obj\Debug\Day_07_Arrays.pdb

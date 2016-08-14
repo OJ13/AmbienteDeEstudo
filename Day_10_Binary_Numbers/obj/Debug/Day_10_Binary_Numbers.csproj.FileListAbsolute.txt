@@ -1,0 +1,6 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_10_Binary_Numbers\bin\Debug\Day_10_Binary_Numbers.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_10_Binary_Numbers\bin\Debug\Day_10_Binary_Numbers.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_10_Binary_Numbers\bin\Debug\Day_10_Binary_Numbers.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_10_Binary_Numbers\obj\Debug\Day_10_Binary_Numbers.csprojResolveAssemblyReference.cache
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_10_Binary_Numbers\obj\Debug\Day_10_Binary_Numbers.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_10_Binary_Numbers\obj\Debug\Day_10_Binary_Numbers.pdb

@@ -1,0 +1,6 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_08_Dictionaries_and_Maps\bin\Debug\Day_08_Dictionaries_and_Maps.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_08_Dictionaries_and_Maps\bin\Debug\Day_08_Dictionaries_and_Maps.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_08_Dictionaries_and_Maps\bin\Debug\Day_08_Dictionaries_and_Maps.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_08_Dictionaries_and_Maps\obj\Debug\Day_08_Dictionaries_and_Maps.csprojResolveAssemblyReference.cache
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_08_Dictionaries_and_Maps\obj\Debug\Day_08_Dictionaries_and_Maps.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_08_Dictionaries_and_Maps\obj\Debug\Day_08_Dictionaries_and_Maps.pdb

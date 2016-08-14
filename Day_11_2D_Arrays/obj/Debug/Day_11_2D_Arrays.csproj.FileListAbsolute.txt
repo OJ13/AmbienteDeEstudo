@@ -1,0 +1,9 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_11_2D_Arrays\bin\Debug\Day_11_2D_Arrays.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_11_2D_Arrays\bin\Debug\Day_11_2D_Arrays.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_11_2D_Arrays\bin\Debug\Day_11_2D_Arrays.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_11_2D_Arrays\obj\Debug\Day_11_2D_Arrays.csprojResolveAssemblyReference.cache
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_11_2D_Arrays\obj\Debug\Day_11_2D_Arrays.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_11_2D_Arrays\obj\Debug\Day_11_2D_Arrays.pdb
+D:\Users\osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_11_2D_Arrays\bin\Debug\Day_11_2D_Arrays.exe.config
+D:\Users\osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_11_2D_Arrays\obj\Debug\Day_11_2D_Arrays.exe
+D:\Users\osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_11_2D_Arrays\obj\Debug\Day_11_2D_Arrays.pdb

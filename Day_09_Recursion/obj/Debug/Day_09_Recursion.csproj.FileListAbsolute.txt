@@ -1,0 +1,6 @@
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_09_Recursion\bin\Debug\Day_09_Recursion.exe.config
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_09_Recursion\bin\Debug\Day_09_Recursion.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_09_Recursion\bin\Debug\Day_09_Recursion.pdb
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_09_Recursion\obj\Debug\Day_09_Recursion.csprojResolveAssemblyReference.cache
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_09_Recursion\obj\Debug\Day_09_Recursion.exe
+C:\Users\Osmar\Documents\ProjetosC#\HackerRank\HR_30_Days_of_Code\Day_09_Recursion\obj\Debug\Day_09_Recursion.pdb

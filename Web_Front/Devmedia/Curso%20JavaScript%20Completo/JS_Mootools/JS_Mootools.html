@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Mootools - JavaScript</title>
+  <style type="text/css">
+    #accordion
+    {
+      margin: 20px 0 0;
+      max-width: 600px;
+    }
+    #accordion h2
+    {
+      background: #145145;
+      color: white;
+      cursor: pointer;
+      font: 12px Helvetica, Arial, sans-serif;
+      line-height: 16px;
+      margin: 0 0 4px 0;
+      padding: 3px 5px 1px;
+    }
+    #accordion .content
+    {
+      background-color: #DDDDDD;
+    }
+    #accordion .content p
+    {
+      margin: 0.5em 0;
+      padding: 0 6px 8px 6px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="accordion">
+    <h2>Quem é OJ?</h2>
+    <div class="content">
+      <p>OJ é o Osmar Junior é desenvolvedor e nonononon nononon nonononon nononono nonononono ononon</p>
+      <p>nono nonononononononnono nononononon onononononon onononononon nnononononoonon nononononon ononononon nonono</p>
+    </div>
+
+    <h2>Oque é BlackTrezeTec?</h2>
+      <div class="content">
+        <p>TrezeTec é uma grande empresa............ nonononononononononononoonoonoonoon nononononononononono noo</p>
+        <p>Nonononon ononononononoon ononononono nonononon ononono nonono nonon onononononononon ononono</p>
+      </div>
+
+    <h2>Oque é o Mootools?</h2>
+      <div class="content">
+        <p>Mootools é um compacto, modular, orientado a objeto Javascript Framework designado para Desevolvedores JavaScript Intermediários e Avançados</p>
+        <p>Ele permite que você escreva um código poderoso, flexivel e elegante para os browsers, com documentação, é uma excelente API</p>
+      </div>
+
+  </div>
+
+  <script type="text/javascript" src="MooTools-Core-1.6.0.js"></script>
+  <script type="text/javascript">
+  window.addEvent('domready', function ()
+    {
+    new Fx.Accordion($('accordion'), '#accordion h2','#accordion .content');
+    });
+  </script>
+  <script type="text/javascript" src="mootools-core-1.4-full.js"></script>
+  <script type="text/javascript" src="mootools-more-1.4-full.js"></script>
+</body>
+</html>

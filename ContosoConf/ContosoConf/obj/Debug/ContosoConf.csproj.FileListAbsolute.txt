@@ -1,0 +1,5 @@
+c:\users\admin\documents\visual studio 2012\Projects\ContosoConf\ContosoConf\bin\ContosoConf.dll
+c:\users\admin\documents\visual studio 2012\Projects\ContosoConf\ContosoConf\bin\ContosoConf.pdb
+c:\users\admin\documents\visual studio 2012\Projects\ContosoConf\ContosoConf\obj\Debug\ContosoConf.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2012\Projects\ContosoConf\ContosoConf\obj\Debug\ContosoConf.dll
+c:\users\admin\documents\visual studio 2012\Projects\ContosoConf\ContosoConf\obj\Debug\ContosoConf.pdb

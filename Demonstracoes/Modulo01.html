@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Aula 01 - Começando com HTML, Javascript e CSS</title>
+    <style>
+        /*seleção por título*/
+        p,h2 {
+            color:blue;
+        }
+        h1 {
+            color:aquamarine;
+        }
+        .textoVermelho {
+            color:red;
+        }
+        #texto {
+            color:green;
+        }
+    </style>
+    <link href="Style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Isto é um Título</h1>
+    <h2>Isto é um SubTítulo</h2>
+    <h3>Isto é um SubSubTítulo</h3>
+    <p>Lorem Ipsum é <strong>simplesmente uma simulação de texto</strong> da indústria tipográfica e de impressos, 
+        e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e 
+        os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como
+         também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+    <p class="textoVermelho">Lorem Ipsum é <strong>simplesmente uma simulação de texto</strong> da indústria tipográfica e de impressos, 
+        e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e 
+        os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como
+         também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+    <p class="textoVermelho" id="texto">Lorem Ipsum é <strong>simplesmente uma simulação de texto</strong> da indústria tipográfica e de impressos, 
+        e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e 
+        os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como
+         também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.</p>
+    <span class="textoVermelho">Lorem Ipsum é simplesmente uma simulação de texto</span>
+    <span>Lorem Ipsum é simplesmente uma <em> de texto</em></span>
+    <br />
+    <ul>
+        <li style="font:bold; border:solid 2px">Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <br />
+    <ol>
+        <li>Item A</li>
+        <li>Item B</li>
+        <li>Item C</li>
+    </ol>
+    <ul>
+        <li>Item 1
+            <ol>
+                <li>Item A</li>
+                <li>Item B</li>
+            </ol>
+        </li>
+        <li>Item 2
+            <ul>
+                <li>Item A</li>
+                <li>Item B</li>
+            </ul>
+        </li>
+    </ul>
+    <br />
+    <img src="foto.jpg" alt="Palestrante April Meyer" width="150" height="150" />
+    <br />
+    <a href="Page1.html">Page 1</a>
+    <br />
+    <br />
+    <form action="/" method="post">
+        <label for="name">Nome</label>
+        <input type="text" name="name"/>
+        <br />
+        <label for="email">Email</label>
+        <input type="email" name="email"/>
+        <br />
+        <input type="submit" name="enviar" value="Enviar" />
+    </form>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        .container {
+            background : yellow;
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h3>Carregamento de arquivo de texto</h3>
+    <input type="file" id="arquivoTexto" name="arquivoTexto" onchange="CarregarTexto()" />
+    <textarea id="result" style="background:#e5e5e5" cols="60" rows="20"></textarea>
+
+    <h3>Carregamento de Immagem</h3>
+    <input type="file" id="arquivoImagem" name="arquivoImagem" onchange="CarregarImagem()" />
+    <img src="#" id="imagem" alt="Imagem carregada via fileReader" />
+    <hr />
+    <h3>Drag and Drop</h3>
+    <div id="divContainer" class="container" ondragover="dragOver(event);" ondrop="drop(event);"></div>
+    
+    <div id="divContainer02" class="container" ondragover="dragOver(event);" ondrop="drop(event);"></div>
+
+    <img src="foto.jpg" id="foto" alt="Imagem do Palestrante" draggable="true" ondragstart="drag(event);" />
+    <br />
+    <br />
+    <hr />
+    <h3>Video</h3>
+    <video poster="foto.jpg"  id="video">
+        <source src="http://ak.channel9.msdn.com/ch9/265b/9a76fccd-941e-4285-ad00-9ea200aa265b/MIX09KEY01_high_ch9.mp4" type="video/mp4" />
+        <!--<source src="file.webm" type="video/webm" />
+        <source src="file.ogv" type="video/ogg" />-->
+    </video><br />
+    <button id="btnVideo" onclick="Play()" >Play</button><label id="timeVideo"></label>
+    <br /><br />
+    <hr />
+    <h3>GeoLOcation</h3>
+    <button onclick="ObterCoordenadas()" id="btnGeoLocation">Obter Coordenadas</button>
+    <label id="coordenadas" style="color:red"></label>
+    <br /><br />
+    <hr />
+    <h3>Verificar conectividade</h3>
+    <button onclick="Conectividade()">Verificar Conectividade</button>
+    <script>
+        function Conectividade() {
+            if (navigator.onLine) {
+                alert('Página com acesso a Internet');
+            } else {
+                alert('Página SEM acesso a Internet');
+            }
+        }
+        function ObterCoordenadas() {
+            navigator.geolocation.getCurrentPosition(function (position) {
+                var coordenadas = document.getElementById('coordenadas');
+                coordenadas.textContent = 'Latitude: ' + position.coords.latitude + ' Longitude: ' + position.coords.longitude;
+            });
+        }
+        var video = document.getElementById('video');
+
+        function Play() {
+            if (video.paused) {
+                video.play();
+                btnVideo.textContent = 'Pause';
+            } else {
+                video.pause();
+                btnVideo.textContent = 'Play';
+            }            
+        }
+        setInterval(function () {
+            var time = document.getElementById('timeVideo');
+            time.textContent = parseInt(document.getElementById('video').currentTime);
+        });
+        function drag(ev) {
+            ev.dataTransfer.setData('text', ev.target.id);
+        }
+        function dragOver(ev) {
+            ev.preventDefault();
+        }
+        function drop(ev) {
+            ev.preventDefault();
+            
+            var data = ev.dataTransfer.getData('text');
+            ev.target.appendChild(document.getElementById(data));
+        }
+        function CarregarImagem() {
+            var reader = new FileReader();
+            var arquivoImagem = document.getElementById('arquivoImagem');
+
+            reader.onload = function (e) {
+                document.getElementById('imagem').src = e.target.result;
+                //alert(e.target.result);
+            }
+            reader.readAsDataURL(arquivoImagem.files[0]);
+        }
+        function CarregarTexto() {
+            var reader = new FileReader();
+            var arquivoTexto = document.getElementById('arquivoTexto');
+
+            reader.onload = function (e) {
+                document.getElementById('result').value = e.target.result;
+            }
+            reader.readAsText(arquivoTexto.files[0]);
+        }        
+    </script>
+</body>
+</html>

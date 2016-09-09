@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h3>Cookie</h3>
+    <input type="text" name="cookie" id="cookie" placeholder="Digite um valor para armazenar no Cookie" />
+    <button id="btnArmazenarCookie" onclick="ArmazenarCookie()">Armazenar Cookie</button>
+    <button id="btnRecuperarCookie" onclick="RecuperarCookie()">Recuperar Cookie</button>
+    <div id="resultado"></div>
+    <br />
+    <hr />
+    <h3>Session Storage</h3>
+    <input type="text" name="textoSessionStorage" id="textoSessionStorage" placeholder="Digite um valor para armazenar no Session Storage" />
+    <button id="btnArmazenarSS" onclick="ArmazenarSessionStorage()">Armazenar Session Storage</button>
+    <button id="btnRecuperarSS" onclick="RecuperarSessionStorage()">Recuperar Session Storage</button>
+    <div id="resultado02"></div>
+    <br />
+    <hr />
+    <h3>Local Storage</h3>
+    <input type="text" name="textoLocalStorage" id="textoLocalStorage" placeholder="Digite um valor para armazenar no Local Storage" />
+    <button id="btnArmazenarLS" onclick="ArmazenarLocalStorage()">Armazenar Local Storage</button>
+    <button id="btnRecuperarLS" onclick="RecuperarLocalStorage()">Recuperar Local Storage</button>
+    <div id="resultado03"></div>
+    <script>
+        window.addEventListener('storage', function (e) {
+            var texto = 'Você está alterando o valor da chave ' + e.key +
+                        ' de ' + e.oldValue + ' para ' + e.newValue;
+            alert(texto);
+        });
+
+        function ArmazenarLocalStorage() {
+            var texto = document.getElementById('textoLocalStorage');
+            localStorage['texto'] = texto.value;
+            texto.value = '';
+        }
+        function RecuperarLocalStorage() {
+            var texto = localStorage['texto'];
+            document.getElementById('resultado03').innerHTML = texto;
+        }
+        function ArmazenarSessionStorage() {
+            var texto = document.getElementById('textoSessionStorage');
+            sessionStorage['texto'] = texto.value;
+            texto.value = '';
+        }
+        function RecuperarSessionStorage() {
+            var texto = sessionStorage['texto'];
+            document.getElementById('resultado02').innerHTML = texto;
+        }
+        function ArmazenarCookie() {
+            var cookie = document.getElementById('cookie');
+            document.cookie = '{"valor": "' + cookie.value + '"}'
+            cookie.value = '';
+        }
+        function RecuperarCookie() {
+            var cookie = JSON.parse(document.cookie);
+            document.getElementById('resultado').innerHTML = cookie.valor;
+        }
+    </script>
+</body>
+</html>

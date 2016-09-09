@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Aula 02 _ Utilizando novos elementos do HTML5</title>
+    <style>
+        p {
+            font-size: 20px;
+            color: #f00;
+            opacity: 0.5;
+            letter-spacing: 10px;
+            line-height: 20px;
+            text-align: center;
+            text-decoration: line-through;
+            text-transform: uppercase;
+        }
+        #retangulo {
+            width: 300px;
+            height: 200px;
+            /*background: red;*/
+            margin: 50px;
+            /*margin: 150px 10px 20px 200px;*/
+            border: solid black 30px;
+            padding: 10px;
+            background-image: url('foto.jpg');
+            /*background-repeat: repeat-x;*/        /*Horizontalmente*/
+            /*background-repeat: repeat-y;        /*verticalmente*/
+            background-repeat: no-repeat;        /*Horizontalmente*/
+            background-position:center;
+            background-position-x: 30px;
+            background-position-y: 80px;
+            background-size: 200px;
+        }
+    </style>
+</head>
+<body>
+    <hgroup>
+        <h1>Aula 02</h1>
+        <h2>Novos elementos do HTML 5</h2>
+        <h3>Agrupamento de titulos</h3>
+    </hgroup>
+    <p>
+        <mark>Preste atenção nas aulas seguintes</mark>, e vocÊ será um excelente programador, estudo agora e deixe <small>as bobeiras de lado</small>
+    </p>
+    <figure>
+        <img src="foto.jpg" alt="Palestrante April Meyer" />
+        <figcaption>Esta é um imagem de uma palestrante</figcaption>
+    </figure>
+    <time datetime="2016-08-30">Hoje</time>
+    
+    <div id="retangulo">
+        Preste atenção nas aulas
+    </div>
+    
+    <script>
+        var numero = 10;
+        var texto = "É nóiz Queiroz!";
+        var noValue;
+        var nullValue = null;
+        var certo = true;
+
+        function Somar(numero1, numero2) {
+            return numero1 + numero2;
+        }
+
+        function SomarMais10(numero1, numero2) {
+
+            var numero3 = 10;
+
+            return numero1 + numero2 + numero3;
+        }
+
+        function Write(texto) {
+            document.write(texto + '<br/>');
+        }
+
+        var soma = Somar(100, 25);
+
+        var soma2 = SomarMais10(10, 20);
+
+        Write(soma);
+        Write(soma2);
+        Write('Texto - agora vai');
+
+        if (soma > 100) {
+            Write('A soma dos valores é maior que 100')
+        } else if(soma <= 100 && soma >= 50) {
+            Write('A soma dos valores está entre 50 e 100');
+        } else {
+            Write('A soma dos valores é menor que 50');
+        }
+
+        var numeroX = 3
+        switch (numeroX) {
+            case 0: Write('O numero é Zero'); break;
+            case 1: Write('O numero é UM'); break;
+            case 2: Write('O numero é Dois'); break;
+            case 3: Write('O numero é Três'); break;
+            case 4: Write('O numero é Quatro'); break;
+            default: Write('O número não é de 0 a 4');
+        }
+
+        var controle = 0;
+        Write('WHILE');
+        while (controle <= 10) {
+            Write('Nesse momento o valor do controle é ' + controle++);
+            //Write('Nesse momento o valor do controle é ' + ++controle);
+        }
+        controle = 0;
+        Write('DO')
+        do {
+            Write('Nesse momento o valor do controle é ' + controle++);
+        } while (controle <= 10);
+
+        Write('FOR');
+        for (var i = 0; i <= 10; i++) {
+            Write('Nesse momento o valor do controle é ' + i);
+        }
+
+        var nomes = ['Paulo', 'Thales', 'Agnes', 'Fabiana'];
+        var indice = nomes.indexOf('Thales');
+        Write('O indice do Thales é ' + indice);
+        Write('O nome cujo indice é 3 é => ' + nomes[3]);
+
+        for (var item in nomes) {
+            Write(item + ' - ' + nomes[item]);
+        }
+
+        var pessoa = {'id' : 1,'nome': 'Paulo','idade': 40};
+        var pessoas = [
+            { 'id': 1, 'nome': 'Paulo', 'idade': 40 },
+            { 'id': 2, 'nome': 'Thales', 'idade': 20 },
+            { 'id': 3, 'nome': 'Agnes', 'idade': 11 }
+        ];
+        for (var p in pessoas){
+            Write(pessoas[p].id + ' => ' + pessoas[p].nome +' tem a idade: ' + pessoas[p].idade);
+        }
+         
+        var re = new RegExp('[pg]ato');
+        if (re.test('pato')) {
+            Write('passou');
+        }
+        if (re.test('fato')) {
+            Write('Não passou');
+        }
+        if (re.test('gato')) {
+            Write('gato passou');
+        }
+        Write(Math.PI);
+
+    </script>
+</body>
+</html>

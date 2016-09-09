@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <h1>WebSocket</h1>
+
+    <input type="text" id="nome" name="nome" placeholder="Digite Seu Nome" /><br /><br />
+    <textarea cols="30" rows="10" id="mensagem" placeholder="Digite sua Mensagem"></textarea>
+    <button onclick="Enviar()" id="btnEnviar">Enviar</button>
+    <div id="resultado"></div>
+
+    <script>
+        var nome, mensagem;
+
+        var resultado = document.getElementById('resultado');
+        var url = 'ws://echo.websocket.org';
+        var socket = new WebSocket(url);
+
+        socket.onopen = function () {
+            resultado.innerHTML = 'socket conectado!';
+        }
+        socket.onmessage = function (e) {
+            var msg = JSON.parse(e.data);
+            resultado.innerHTML += '<p>Mensagem Recebida de - ' +
+                msg.nome + ': ' +
+                msg.mensagem +'</p>';
+        }
+        function Enviar() {
+            nome = document.getElementById('nome');
+            mensagem = document.getElementById('mensagem');
+
+            var msg = { nome: nome.value, mensagem: mensagem.value };
+            socket.send(JSON.stringify(msg));
+
+            //nome.value = '';
+            mensagem.value = '';
+        }       
+
+    </script>
+</body>
+</html>

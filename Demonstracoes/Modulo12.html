@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        #div01 {
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            cursor: pointer;
+            transition: width 2s, height 2s, background-color 4s;
+        }
+
+            #div01:hover {
+                width: 600px;
+                height: 150px;
+                background-color: yellow;
+            }
+
+        #div02, #div03, #div04, #div05, #div08 {
+            width: 150px;
+            height: 150px;
+            cursor:pointer;
+            background-color: black;
+            transition: border-radius 3s, width 2s, height 2s;
+        }
+
+            #div02:hover {
+                height: 250px;
+                width: 250px;
+                border-radius: 50%;
+                background-color: red;
+            }
+        #log {
+            color:red;
+        }
+        #div03, #div04, #div05, #div08 {
+            margin : 0 auto;
+            background: black;
+        }
+        #div06 {
+            height: 150px;
+            width: 150px;
+            padding: 10px;
+            border: 1px solid black;
+            perspective: 150px;
+            position: relative;
+        }
+        #div07 {
+            padding: 50px;
+            position: absolute;
+            border: 1px solid black;
+            background-color: red;
+            cursor: pointer;
+            font-size: 20px;
+            transition: trasform 5s;
+        }
+            #div07:hover {
+                transform: rotateY(45deg) rotateX(30deg);
+            }
+    </style>
+</head>
+<body>
+    <h2>Trasition</h2>
+    <div id="div01"></div>
+    <div id="div02"></div>
+    <div id="log"></div>
+    <hr />
+
+    <h2>Transformation</h2>
+    <input type="text" id="txtRotate" name="txtRotate" placeholder="Digite um número para rotacionar" />
+    <button id="btnRotate" onclick="Rotacionar()">Rotacionar</button>
+    <div id="div03"></div>
+    <div id="log02"></div>
+    <hr />
+
+    <h2>Translate</h2>
+    <input type="text" id="txtX" name="txtX" placeholder="Digite um número para trocar " />
+    <input type="text" id="txtY" name="txtY" placeholder="Digite um número para trocar " />
+    <button id="btnTranslate" onclick="Translate()">Translate</button>
+    <div id="div04"></div>
+    <hr />
+
+    <h2>Escala</h2>
+    <input type="text" id="txtEscala" name="txtEscala" placeholder="Digite um número para mudar a escala" />
+    <button id="Button1" onclick="Scale()">Escala</button>
+    <div id="div05"></div>
+    <hr />
+
+    <h2>Inclinação</h2>
+    <input type="text" id="txtSkew" name="txtEscala" placeholder="Digite um número para mudar a escala" />
+    <button id="Button2" onclick="Skew()">Inclinar</button>
+    <div id="div08"></div>
+    <hr /><hr />
+
+    <h1>Transformação em 3D</h1>
+    <div id="div06">
+        <div id="div07">Posição 3D</div>
+    </div>
+
+
+    <script>
+        function Skew() {
+            var div08 = document.getElementById('div08');
+            var inclinar = document.getElementById('txtSkew');
+            if (isNaN(inclinar.value)) {
+                document.getElementById('log2').innerHTML =
+                    'O valor  deve ser um número...';
+                return;
+            }
+            div08.style.transform = 'skew(' + inclinar.value + 'deg)';
+            inclinar.value = '';
+            document.getElementById('log2').innerHTML = '';
+        }
+        function Scale() {
+            
+            var div05 = document.getElementById('div05');
+            var escala = document.getElementById('txtEscala');
+
+            if (isNaN(escala.value)) {
+                document.getElementById('log02').innerHTML =
+                    'O valor em graus dever ser em números..';
+                return;
+            }
+            div05.style.transform = 'scale(' + escala.value + ')';
+            escala.value = '';
+            document.getElementById('log2').innerHTML = '';
+        }
+        function Translate() {
+            var div03 = document.getElementById('div04');
+
+            var x = document.getElementById('txtX');
+            var y = document.getElementById('txtY');
+
+            if (isNaN(x.value) && isNaN(y.value)) {
+                document.getElementById('log2').innerHTML =
+                    'O valor deve ser um número...';
+                return;
+            }
+            div04.style.transform =
+                'translate(' + x.value + 'px,' + y.value + 'px)';
+            x.value = '';
+            y.value = '';
+            document.getElementById('log2').innerHTML = '';
+        }
+        function Rotacionar() {
+            
+            var div03 = document.getElementById('div03');
+            var graus = document.getElementById('txtRotate');
+
+            if (isNaN(graus.value)) {
+                document.getElementById('log02').innerHTML =
+                    'O valor em graus dever ser em números..';
+                return;
+            }
+            div03.style.transform = 'rotate(' + graus.value + 'deg)';
+            graus.value = '';
+            document.getElementById('log2').innerHTML = '';
+            
+        }
+       
+        window.addEventListener('transitionend', function (e) {
+            var log = document.getElementById('log');
+            log.innerHTML += '<p>' + e.propertyName +
+                ' do elemento ' + e.target.id +
+                ' demorou ' + parseInt(e.elapsedTime) +
+                ' segundos para trancisionar'
+                '</p>'
+        });
+    </script>
+</body>
+</html>

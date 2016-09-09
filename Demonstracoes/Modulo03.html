@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <form action="/" method="post" name="frm">
+        <input type="text" name="txtMensagem" id="txtMensagem" value="Mensagem contida na caixa de Texto" />
+    </form>
+    <ul id="nomes"></ul>
+    <div id="div1"></div>
+
+    <button id="btn1">Clique Aqui</button>
+    <br /><br />
+
+    <input type="text" name="item" id="item" />
+    <button id="btnIncluir">Incluir Item na lista</button>
+    <br /><br />
+    <button id="btnJquery">Botão JQuery</button>
+
+    <script src="Scripts/jquery-3.1.0.min.js"></script>
+    <script>
+        function Write(texto) {
+            document.write(texto + '<br/>');
+        }
+        /*JQUERY*/
+
+        $('#btnJquery').click(function () {
+            $('#nomes').append('<li style=color:blue>' + $('#item').val() + '</li>');
+            $('#item').val('');
+        });
+
+        var texto = $('#txtMensagem').val();
+        var paragrafo = $('p');
+
+        $('#nomes').append('<li>Teste è Nóis</li>');
+
+        /*------------------------*/
+        /*Eventos*/
+        document.getElementById('btnIncluir').addEventListener('click',
+            function () {
+                var item = document.getElementById('item');
+                var novoItem = document.createElement('li');
+                novoItem.textContent = item.value;
+                document.getElementById('nomes').appendChild(novoItem);
+                item.value = '';
+            });
+        document.getElementById('btn1').addEventListener('click',
+            function () {
+                alert('Você clicou no botão');
+            });
+
+        /*--------------------------*/
+        /*Selecioonando Elementos*/
+        //var mensagem = document.forms[0].elements[0].value;
+        //var mensagem = document.forms.frm.txtMensagem.value;
+        var mensagem = document.getElementById('txtMensagem').value;
+        Write(mensagem);
+        /*----------------------------------------*/
+        /*Incluindo e Excluindo novos elementos*/
+        var novoItem1 = document.createElement('li');
+        novoItem1.textContent = 'Osmar Junior';
+        novoItem1.style.color = 'red';
+        novoItem1.id = 'item1';
+        //novoItem1.className...
+
+        var novoItem2 = document.createElement('li')
+        novoItem2.textContent = 'Paulo Pilão';
+        var novoItem3 = document.createElement('li');
+        novoItem3.textContent = 'Nuevo Teste';
+
+        var lista = document.getElementById('nomes');
+
+        lista.appendChild(novoItem1);
+        lista.appendChild(novoItem2);
+        lista.appendChild(novoItem3);
+
+        lista.removeChild(novoItem3);
+
+        var div1 = document.getElementById('div1');
+        var novoParagrafo = document.createElement('p');
+        novoParagrafo.textContent = 'Se liga no texto que gerou zika...é nóis queiroz';
+        div1.appendChild(novoParagrafo);
+
+        var span = document.createElement('span');
+        span.textContent = 'Funcionou';
+        div1.appendChild(span);
+
+        var attr = document.createAttribute('placeholder');
+        attr.value = 'Digite uma mensagem aqui...';
+        document.getElementById('txtMensagem').setAttributeNode(attr);
+        /*---------------------------------------*/
+    </script>
+</body>
+</html>

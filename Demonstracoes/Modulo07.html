@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <script>
+        "use strict"    /*Você não pode criar uma variavel global dentro de uma função*/
+
+        var numero = 20;
+
+        function TesteScopo() {
+            //numero = 10;              //Atribuição
+            var numero = 10;            // Nesse caso essa variável é um Hoisting
+           // numero2 = 50;               // Sem a palavra var, ela se torna uma variável global
+        }
+        //console.log(numero);
+        TesteScopo();
+        //alert(numero);
+        //alert(numero2);
+
+        /*Função Imediata - Carrega assim que a página carregar*/
+        (function () { var numero3 = 157; alert(numero3) })();
+
+        /*Criar um namespace*/
+        var meuNamespace = {};
+
+        meuNamespace.valor = 10;
+        meuNamespace.valor2 = 20;
+        meuNamespace.Somar = function () {
+
+            return meuNamespace.valor + meuNamespace.valor2;
+        }
+
+        //alert(meuNamespace.Somar());
+
+        var numero20 = "20.00";
+        if (isNaN(numero20)) {
+            //alert("Não é um número");
+        } else {
+            //alert("Isto é um número");
+        }
+
+        /*Criando Objetos - forma 1*/
+        var funcionario1 = {};
+        funcionario1.nome = 'Paulo';
+        funcionario1.salario = 1000;
+        funcionario1.cpf = '156480745';
+        funcionario1.aumentarSalario = function (valor) {
+            this.salario += valor
+            //alert('O salário agora é ' + this.salario);
+        }
+
+        funcionario1.aumentarSalario(500);
+
+        /*Criando Objetos - forma 2*/
+        var funcionario2 = {
+            nome: 'Thales',
+            salario: 500,
+            cpf: '045045454545',
+            aumentarSalario : function (valor) {
+                this.salario += valor
+                //alert('O salário agora é ' + this.salario);
+            }
+        };
+
+        funcionario2.aumentarSalario(400);
+        /*Construtor*/
+
+        var conta = function (id, nome) {
+            this.id = id,
+            this.nome = nome,
+            this.saldo = 0,
+            this.transacoes = 0
+        };
+        /* - Function do Objeto*/
+        conta.prototype = {
+            transferencia: function (valor, conta) {
+                conta.saldo += valor;
+                this.saldo -= valor;
+                conta.transacoes++;
+                this.transacoes++;
+            },
+            deposito: function (valor) {
+                this.saldo += valor;
+                this.transacoes++;
+
+                return this.saldo;
+            },
+            saque: function (valor) {
+                this.saldo -= valor;
+                this.transacoes++;
+
+                return this.saldo;
+            },
+            verificarSaldo: function () {
+                var msg = 'Nome: ' + this.nome + '\r\nSaldo: ' + this.saldo + '\r\nTransações: ' + this.transacoes;
+                //alert(msg);
+            }
+        };
+
+        var contaPilao = new conta(1, ' Paulo Pilão');
+        var contaJao = new conta(2, 'Jão Zézão');
+
+        alert(contaPilao.nome + ' - saldo: ' + contaPilao.saldo);
+
+        contaPilao.deposito(500);
+        contaPilao.deposito(200);
+        contaPilao.deposito(500);
+        contaPilao.saque(100);
+
+        contaPilao.transferencia(55, contaJao);
+        contaJao.transferencia(100, contaPilao);
+
+        contaPilao.verificarSaldo();
+        contaJao.verificarSaldo();
+
+        /*Encapsulamento*/
+        var automovel = function (marca, modelo) {
+            var _marca, _modelo;
+            
+            _marca = marca;
+            _modelo = modelo;
+
+            this.Marca = function () { return _marca; }
+            this.Modelo = function () { return _modelo; }
+
+            this.setMarca = function (valor) { _marca = valor; }
+            this.setModelo = function (valor) { _modelo = valor; }
+
+            this.teste = (function () {
+                alert("Teste de um Construtor");
+            })();
+        };
+
+        var carro1 = new automovel('GM', 'Agile');
+        //alert(carro1.Marca() + ' - ' + carro1.Modelo());
+        carro1.setMarca('Fiat');
+        //alert(carro1.Marca() + ' - ' + carro1.Modelo());
+        carro1.setModelo('147');
+        alert(carro1.Marca() + ' - ' + carro1.Modelo());
+        
+        /*---------HERANÇA-------------*/
+
+        var pessoa = function (nome, idade) {
+            this.nome = nome;
+            this.idade = idade;
+        }
+        pessoa.prototype = {
+            fazAniversario: function(){
+                this.idade++;
+            }
+        }
+        var estudante = function (idade, nome , serie) {
+            this.idade = idade;
+            this.nome = nome;
+            this.serie = serie;
+        }
+        estudante.prototype = new pessoa();
+                
+        var estudante1 = new estudante(11, 'Agnes', '6 Ano');
+        estudante1.fazAniversario();
+
+        alert(estudante1.idade);
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        /*input {
+            border: solid 1px black;
+        }
+            input:valid {
+                border: solid 1px blue;
+                background: #f1f1f1;
+            }
+            input:invalid {
+                border: solid 1px #ffd800;
+                background: #d71b1b;
+            }*/
+        .campoValido {
+             border: solid 1px blue;
+             background: #f1f1f1;
+        }
+        .campoInvalido {
+             border: solid 1px #ffd800;
+             background: #d71b1b;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+        <fieldset>
+            <legend>Cadastro de Clientes</legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu Nome" required="required" autocomplete="on" autofocus="autofocus"/><br /><br />
+
+            <label for="cidade">Cidade</label>
+            <select id="cidade" name="cidade">
+                <optgroup label="São Paulo">
+                    <option value="1">São Paulo</option>
+                    <option value="2">Embú</option>
+                    <option value="3">Osasco</option>
+                    <option value="4">Taboão da Serra</option>
+                </optgroup>
+                <optgroup label="Rio de Janeiro">
+                    <option value="5">Rio de Janeiro</option>
+                    <option value="6">Niterói</option>
+                    <option value="7">Duque de Caxias</option>
+                    <option value="8">Cidade Rio</option>
+                </optgroup>
+            </select>
+            <br /><br />
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required="required" /><br /><br />
+            <label for="idade">Idade</label>
+            <input type="number" name="idade" id="idade" min="18" max="70" required="required" /><br /><br />
+            <label for="codigo">Codigo</label>
+            <input pattern="[a-z]{5}[0-9]{3}" title="5 letras e 3 numeros" type="text" name="codigo" id="codigo" required="required" /><br /><br />
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" /><br /><br />
+        </fieldset>
+        <br /><br />
+        <input type="submit" name="enviar" value="Enviar" style="width: 50px" />
+    </form>
+    <hr /><hr />
+
+    <form action="/" method="post" onsubmit="return Validacao()">
+         <label for="txtNome">Nome</label>
+            <input type="text" name="txtNome" id="txtNome" /><br /><br />
+         <label for="cpf">CPF</label>
+            <input type="text" name="txtCPF" id="txtCPF" /><br /><br />
+         <input type="submit" name="send" value="Enviar Dados" style="width: 100px" />
+    </form>      
+    <div id="erros"></div>
+    <br /><br />
+    <hr />
+    <form action="/" method="post" onsubmit="validar()">
+        <input type="text" name="txtCidade" id="txtCidade" onblur="Validar(this)"/>
+    </form>
+    <script>
+        document.getElementById('nome').setCustomValidity('O nome é Obrigatório');
+        function Validar(input) {
+            if (input.value.length <= 3) {
+                input.setCustomValidity('O Campo deve ter no mínimo 3 dígitos');
+            } else {
+                input.setCustomValidity('');
+            }
+            document.getElementById('erros').innerHTML = input.validationMessage;
+        }
+
+        function Validacao() {
+            var result = true;
+            var msg = '';
+            
+            if (document.getElementById('txtNome').value.trim().length == 0) {
+                result = false;
+                msg = 'O campo nome é Obrigatório<br>/';
+                document.getElementById('txtNome').className = 'campoInvalido';
+            }
+            if (document.getElementById('txtNome').value.length >= 15) {
+                result = false;
+                msg = 'Pode ter no máximo 15 caracteres<br>/';
+                document.getElementById('txtNome').className = 'campoInvalido';
+            }
+            if (document.getElementById('txtCPF').value.length != 11) {
+                result = false;
+                msg = 'O campo CPF dever ter 11 caracteres<br>/';
+                document.getElementById('txtCPF').className = 'campoInvalido';
+            }
+            if (result) {
+                document.getElementById('txtNome').className = 'campoValido';
+                document.getElementById('txtCPF').className = 'campoValido';
+            }
+            document.getElementById('erros').innerHTML = msg;
+            return result;
+        }
+        //function Validacao() {
+        //    var result = true;
+        //    var msg = '';
+        //    if (document.getElementById('txtNome').value.trim().length == 0) {
+        //        result = false;
+        //        msg += 'O campo nome é obrigatório <br/>';
+        //        document.getElementById('txtNome').className = 'campoInvalido';
+        //    }
+        //    if (document.getElementById('txtNome').value.length >= 15) {
+        //        result = false;
+        //        msg += 'O campo nome  pode ter no máximo 15 caracteres <br/>';
+        //        document.getElementById('txtNome').className = 'campoInvalido';
+        //    }
+        //    if (document.getElementById('txtCpf').value.length != 11) {
+        //        result = false;
+        //        msg += 'O campo cpf deve ter 11 caracteres<br/>';
+        //        document.getElementById('txtCpf').className = 'campoInvalido';
+        //    }
+        //    if (result) {
+        //        document.getElementById('txtCpf').className = 'campoValido';
+        //        document.getElementById('txtNome').className = 'campoValido';
+        //    }
+        //    document.getElementById('erros').innerHTML = msg;
+        //    return result;
+        //}
+
+
+    </script>
+</body>
+</html>

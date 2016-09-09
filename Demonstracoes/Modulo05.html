@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>XMLHTTPREQUEST</h1>
+    <input type="text" name="idpessoa" id="idPessoa" style="width:400px" 
+        placeholder="Digite um id para buscar a pessoas"/><br />
+    <button id="btn" onclick="ExecutaRequisicao()">Clique Aqui</button>
+    <div id="resultado"></div>
+    <br />
+    <br />
+    <button id="btnAsyn" onclick="ExecutaRequisicaoAsyn()">Clique Aqui - Para chamar uma Lista de pessoas</button>
+    <br /><br />
+    <button id="btnPost" onclick="EnviarInformacoes()">Enviar Informações</button>
+    <br /><br />
+
+    <h1>JQUERY</h1>
+    <button id="btnGet">GET</button>
+    <div id="resultadoJQ"></div>
+    <br /><br />
+
+    <button id="btnPostJQ">POST</button>
+    <div id="resultadoJQ02"></div>
+    <br /><br />
+
+    <button id="btnLoad">LOAD</button>
+    <div id="resultadoJQ03"></div>
+    <br /><br />
+
+    <button id="btnAjax">AJAX</button>
+    <div id="resultadoJQ04"></div>
+    <br /><br />
+    <form action="/" method="post" id="frm">
+        <input type="text" id="NomeUsuario" name="NomeUsuario" value=" " />
+        <button id="btnSerialize">OK</button>
+    </form>
+    
+    <script src="Scripts/jquery-3.1.0.min.js"></script>
+    <script>
+        var url = 'http://pilao.net.br/api/pessoa/';
+        var novaPessoa = {
+            "Id": 4,
+            "Nome": "OJ",
+            "Ativo": true,
+            "DataNascimento": "1990-12-07T00:00:00",
+            "Email": "ojo@email.com"
+        }
+        /*--------------JQUEY-------------------*/
+
+        /*GET*/
+        $('#btnGet').click(function () {
+            $.get(url + 3, function (data) {
+                var msg = 'O nome da Pessoa é ' + data.Nome + ' e o email da é ' + data.Email;
+                $('#resultadoJQ').html(msg);
+            });
+        });
+        /*POST*/
+        $('#btnPostJQ').click(function () {
+            $.post(url, novaPessoa, function (data) {
+                $('#resultadoJQ02').html(data.msg);
+            });
+        });
+        /*LOAD*/
+        $('#btnLoad').click(function () {
+            $('#resultadoJQ03').load(url);
+        });
+        /*AJAX - que colocamos configurações de todos os tipos*/
+        $('#btnAjax').click(function () {
+            $.ajax({
+                url : url,
+                type : 'GET',
+                success : function (data) {
+                    var content = '';
+                    $.each(data, function (e) {
+                        content += '<p>' + data[e].Nome + '</p>';
+                    });
+                    $('#resultadoJQ04').html(content);
+                },
+                error : function () {
+                    alert('Erro durante a requisição!');
+                }
+            });
+        });
+        /*SERIALIZE*/
+        $('#btnSerialize').click(function () {
+            alert('Nome do Usuario Serializado - ' + $('#frm').serialize());
+        });
+        /*-------------XMLHTTPREQUEST-----------*/
+        function EnviarInformacoes() {
+           
+            var request = new XMLHttpRequest();
+            request.open('POST', url, false);
+
+            request.setRequestHeader('Content-type', 'application/json');
+
+            request.send(JSON.stringify(novaPessoa));
+
+            alert(request.responseText);
+        }
+        function ExecutaRequisicao()
+        {
+            var id = document.getElementById('idPessoa').value;
+            var request = new XMLHttpRequest();
+            request.open('GET', url + id, false);
+            request.send();
+            
+            var pessoa = JSON.parse(request.responseText);
+            var msg = 'O nome da Pessoa é ' + pessoa.Nome + ' e o email da é ' + pessoa.Email;
+            document.getElementById('resultado').innerHTML = msg;
+        }
+
+        function ExecutaRequisicaoAsyn() {
+            var pessoas;
+            var content = '<ul>';
+            var request = new XMLHttpRequest();
+            request.open('GET', url);
+
+            alert(request.getResponseHeader('Content-type'));           //Para ver qual o tipo de arquivo
+            request.onreadystatechange = function () {
+                if (request.readyState == 4) {
+                    
+                    pessoas = JSON.parse(request.responseText);
+
+                    for(var p in pessoas)
+                    {
+                        content += '<li>' + pessoas[p].Nome + '</li>'
+                    }
+                    content += '<ul>';
+
+                    document.getElementById('resultado').innerHTML = content;
+                }
+            }
+
+            request.send();
+        }
+
+    </script>
+
+</body>
+</html>

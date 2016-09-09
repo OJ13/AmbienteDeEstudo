@@ -1,0 +1,7 @@
+﻿#content {
+    width: 100%;
+    font-size: 40px;
+}
+#menu, #banner {
+    display: none;
+}

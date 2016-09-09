@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+         #main div:first-child {
+            color: red;
+        }
+
+        #main div:nth-child(4) {
+            color: green;
+        }
+        .paragrafo::first-letter {
+            color: red;
+            font-size:30px;
+        }
+        .paragrafo::first-line {
+            color:blue;
+        }
+        .paragrafo::before {
+            content: "Texto antes do Paragrafo";
+        }
+        .paragrafo::after {
+            content: "Texto DEPOIS do Paragrafo";
+        }
+        .paragrafo::selection {
+            background: black;
+            color: yellow;
+        }
+        a:visited {
+            color: white;
+            background: black;
+        }
+        a:focus {
+            color: black;
+            background:blue;
+        }
+        a:hover {
+            font-size: 25px;
+            cursor: progress;
+        }
+        input:disabled {
+            color:black;
+            font-size: 20px;
+        }
+        #main {
+            background-image: url('foto.jpg'),url('foto2.jpg');
+            background-repeat:repeat-x,repeat-y;
+            /*height:600px;*/
+            /*background:linear-gradient(gray,white);*/
+            background:radial-gradient(yellow,blue);
+        }
+
+       /*body {
+            background-image:url('foto.jpg');
+        }*/
+        #div1 {
+            width:150px;
+            height:150px;
+            background:linear-gradient(orange,black);
+            /*transform:translate(100px,100px);*/
+            /*transform:rotate(45deg);*/
+            /*transform:scale(2);*/
+            border-radius:50%;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    <div id="main">
+        <div>TExto 01 - aasasas</div>
+        <div>TExto 02 - a054s5f4 5s34f</div>
+        <div>Texto 03 - sfsf064s6f4s4fs064f4sf4s4fsf4</div>
+        <div>Texto 04 - fd0fgfgdffg4f54gf45g4f24g2f4gf42gf2g4f4gf24g</div>
+    </div>
+
+    <p class="paragrafo">
+        Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado.
+    </p>
+
+    <a href="http://pilao.net.br">Site do Pilão</a>
+    <br /><br />
+    <input type="text" name="name" value="teste disable" disabled="disabled" />
+</body>
+</html>

@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .graphic {
+            width: 300px;
+            height: 200px;
+            background: #cffff6;
+            border: solid black 2px;
+        }
+        .bg {
+            /*display: none;*/
+        }
+        .triangulo {
+            transform:rotate(30deg);
+            /*transform: translate(100px, 400px)*/
+            /*transform: scale(2);*/
+            transform:skew(50deg);
+        }
+        #canvas1 {
+            width: 300px;
+            height: 200px;
+            background:#e6dcff;
+        }
+         #canvas2 {
+            width: 300px;
+            height: 200px;
+            background:#e6dcff;
+        }
+    </style>
+</head>
+<body>
+    <h1>SVG</h1>
+    <svg class="graphic" xmlns="http://www.w3.org/2000/svg">
+        <rect x="30" y="30" fill="yellow" stroke="blue" width="100" height="75" ></rect>
+        <rect x="70" y="10" fill="red" stroke="blue" width="100" height="80" rx="5" ry="5" ></rect>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="graphic">
+        <circle r="80" cx="150" cy="100" fill="url(#grad)"></circle>
+        <circle r="50" cx="50" cy="50" ></circle>
+        <circle r="50" cx="250" cy="50" ></circle>
+        <ellipse rx="70" ry="15" cx="150" cy="130" fill="white"></ellipse>
+        <ellipse rx="30" ry="5" cx="110" cy="75" fill="white"></ellipse>
+        <ellipse rx="30" ry="5" cx="190" cy="75" fill="white"></ellipse>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="graphic">
+        <polyline points="50 100, 100 10, 150 100, 200 10, 300 200, 0 0, 0 200, 300 0, 300 200" fill="none" stroke="black"></polyline>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="graphic triangulo">
+        <path stroke="black" d="M 150 50 L 250 150 L 50 150 Z" fill="red"></path>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="graphic">
+        <polygon points="110 70,150 40,190 70, 190 160, 150 130, 110 160" fill="yellow" stroke="black"></polygon>
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" class="bg">
+        <radialGradient id="grad">
+            <stop offset="0.1" stop-color="blue"></stop>
+            <stop offset="0.8" stop-color="red"></stop>
+            <stop offset="0.5" stop-color="yellow"></stop>
+        </radialGradient>
+    </svg>
+    <hr />  
+    <h1>Canvas</h1>
+    <canvas id="canvas1"></canvas>
+    <button onclick="GerarTriangulo()">Triangulo</button>
+    <button onclick="GerarRetangulo()">Triangulo</button>
+    <button onclick="Limpar()">Limpar</button>
+    <hr />    
+    <canvas id="canvas2"></canvas>
+    <input type="text" id="valores" placeholder="digite os valores separados por vírgulas"/>
+    <button onclick="GerarGrafico()">Gerar Gráfico</button>
+    <script>
+        function GerarGrafico() {
+            var dados = document.getElementById('valores').value.split(',');
+            var largura = 50; var espacamento = 50;
+            var canvas = document.getElementById('canvas2');
+            var ctx = canvas.getContext('2d');
+
+            for (var i in dados) {
+                ctx.fillStyle = '#' + Math.floor(Math.random() * 16777215).toString(16);
+                var h = dados[i];
+                ctx.fillRect(espacamento, canvas.height - h, largura, h);
+                espacamento += largura + 10;
+            }
+
+        }
+        function GerarTriangulo() {
+            var canvas = document.getElementById('canvas1');
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = "green";
+            ctx.strokeStyle = "black";
+            ctx.beginPath();
+            ctx.moveTo(60, 30);
+            ctx.lineTo(100, 90);
+            ctx.lineTo(20, 90);
+            ctx.closePath();
+            ctx.stroke();
+            ctx.fill();
+            //ctx.translate(45, 45);            
+        }
+        function Limpar() {
+            var canvas = document.getElementById('canvas1');
+            var ctx = canvas.getContext('2d');
+            ctx.clearRect(0, 0 , canvas.width, canvas.height);
+        }
+        function GerarRetangulo() {
+            var canvas = document.getElementById('canvas1');
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = "red";
+            ctx.fillRect(20, 20, canvas.width - 40, canvas.height - 40);
+        }
+    </script>
+</body>
+</html>

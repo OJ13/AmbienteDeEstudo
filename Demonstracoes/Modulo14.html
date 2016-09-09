@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        select {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Worker</h1>
+    <label for="comados">Escolha um comando</label>
+    <br />  
+    <select id="comandos">
+        <option value="0"></option>
+        <option value="1">Fazer Backup</option>
+        <option value="2">Executar calculo matemático</option>
+        <option value="3">Copiar Arquivo</option>
+        <option value="4">Finalizar WebWorker</option>
+    </select><br />
+    <input type="text" id="mensagem" placeholder="Digite uma mensagem" />
+    <button onclick="Executar()">Enviar</button>
+    <hr />
+    <div id="log"></div>
+
+
+    <script src="Scripts/webWorker.js"></script>
+    <script>
+        var webWorker;
+
+        if (typeof(webWorker) == 'undefined') {
+            webWorker = new Worker('Scripts/webWorker.js');
+        }
+        webWorker.addEventListener('message', function (event) {
+            document.getElementById('log').innerHTML += '<p>' + event.data +'</p>';
+        });
+        function Executar() {
+            var comando = document.getElementById('comandos').value;
+            var mensagem = document.getElementById('mensagem').value;
+            var log = document.getElementById('log');
+
+            if (comando == 0) {
+                log.innerHTML += '<p>Escolher um Comando</p>';
+                return;
+            }
+
+            var json = { comando: comando, msg: mensagem };
+
+            webWorker.postMessage(JSON.stringify(json));
+        }
+    </script>
+</body>
+</html>

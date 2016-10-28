@@ -1,0 +1,34 @@
+﻿@model _0001_DemonstracaoMVC.Models.Pessoa
+
+@{
+    ViewBag.Title = "Details2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details2</h2>
+
+<p>
+    <label for="Nome">
+        @Html.DisplayNameFor(x => x.Nome)
+    </label>
+</p>
+<p>
+    @Html.DisplayFor(x => x.Nome)
+</p>
+<p>
+    <label for="Email">@Html.DisplayNameFor(x => x.Email)</label>
+</p>
+<p>
+    @Html.DisplayFor(x => x.Email)
+</p>
+<p>
+    <label for="DataNascimento">@Html.DisplayNameFor(x => x.DataNascimento)</label>
+</p>
+<p>
+    @Html.DisplayFor(x => x.DataNascimento)
+</p>
+@Html.ActionLink("Voltar","Index")
+
+<h1>
+    @Html.Action("Mensagem")
+</h1>

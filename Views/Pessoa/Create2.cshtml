@@ -1,0 +1,12 @@
+﻿@model _0001_DemonstracaoMVC.Models.Pessoa
+
+@{
+    ViewBag.Title = "Create2";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create2</h2>
+@using(Html.BeginForm("Create","pessoa",FormMethod.Post)){
+    @Html.Partial("formulario", Model)
+    <input type="submit" name="name" value="Enviar" />
+}

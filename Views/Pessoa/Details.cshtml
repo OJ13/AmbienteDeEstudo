@@ -1,0 +1,73 @@
+﻿@model _0001_DemonstracaoMVC.Models.Pessoa
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+<h3>
+    @ViewBag.DataHoraAtual
+</h3>
+<br />
+<p>
+    Cidades:
+</p>
+@{
+    string carro = "Chevrolet";
+    }
+<select>
+    <option value="0">Selecione</option>
+    @foreach (var cidade in (Dictionary<int, string>)ViewBag.cidades)
+    {
+        <option value ="@cidade.Key">@cidade.Value</option>
+    }
+</select>
+    <ul>
+        @foreach (var item in ViewBag.nomes)
+        { 
+            <li>@item</li>
+        }
+    </ul>
+
+<fieldset>
+    <legend>Pessoa</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Nome)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.DataNascimento)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DataNascimento)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Idade)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Idade)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<p>
+
+    @carro.Substring(0,5)
+    
+</p>

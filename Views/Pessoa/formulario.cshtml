@@ -1,0 +1,29 @@
+﻿@model _0001_DemonstracaoMVC.Models.Pessoa
+
+
+        <p>
+            @Html.LabelFor(x => x.Nome)
+        </p>
+        <p>
+            @Html.EditorFor(x => x.Nome)
+            @Html.ValidationMessageFor(x => x.Nome)
+        </p>
+        <p>
+            @Html.LabelFor(x => x.Email)
+        </p>
+        <p>
+            @Html.TextBoxFor(x => x.Email, new { style="color:red" })
+        </p>
+        <p>
+            @Html.LabelFor(x => x.Idade)
+        </p>
+        <p>
+            @Html.EditorFor(x => x.Idade)
+        </p>
+        <p>
+            @Html.LabelFor(x => x.DataNascimento)
+        </p>
+        <p>
+            @Html.EditorFor(x => x.DataNascimento)
+        </p>
+    

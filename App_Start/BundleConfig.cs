@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace _0001_DemonstracaoMVC
+namespace _0002_RotasMVC
 {
     public class BundleConfig
     {

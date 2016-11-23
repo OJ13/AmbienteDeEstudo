@@ -1,0 +1,5 @@
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_05_MetodosAcessores\bin\Debug\Aula_05_MetodosAcessores.exe.config
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_05_MetodosAcessores\bin\Debug\Aula_05_MetodosAcessores.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_05_MetodosAcessores\bin\Debug\Aula_05_MetodosAcessores.pdb
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_05_MetodosAcessores\obj\Debug\Aula_05_MetodosAcessores.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_05_MetodosAcessores\obj\Debug\Aula_05_MetodosAcessores.pdb

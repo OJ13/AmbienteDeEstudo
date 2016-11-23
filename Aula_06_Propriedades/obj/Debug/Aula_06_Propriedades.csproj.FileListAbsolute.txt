@@ -1,0 +1,6 @@
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_06_Propriedades\bin\Debug\Aula_06_Propriedades.exe.config
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_06_Propriedades\bin\Debug\Aula_06_Propriedades.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_06_Propriedades\bin\Debug\Aula_06_Propriedades.pdb
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_06_Propriedades\obj\Debug\Aula_06_Propriedades.csprojResolveAssemblyReference.cache
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_06_Propriedades\obj\Debug\Aula_06_Propriedades.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_06_Propriedades\obj\Debug\Aula_06_Propriedades.pdb

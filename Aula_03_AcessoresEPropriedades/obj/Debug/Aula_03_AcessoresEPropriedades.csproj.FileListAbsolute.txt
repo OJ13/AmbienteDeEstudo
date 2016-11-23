@@ -1,0 +1,6 @@
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_03_AcessoresEPropriedades\bin\Debug\Aula_03_AcessoresEPropriedades.exe.config
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_03_AcessoresEPropriedades\bin\Debug\Aula_03_AcessoresEPropriedades.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_03_AcessoresEPropriedades\bin\Debug\Aula_03_AcessoresEPropriedades.pdb
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_03_AcessoresEPropriedades\obj\Debug\Aula_03_AcessoresEPropriedades.csprojResolveAssemblyReference.cache
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_03_AcessoresEPropriedades\obj\Debug\Aula_03_AcessoresEPropriedades.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_03_AcessoresEPropriedades\obj\Debug\Aula_03_AcessoresEPropriedades.pdb

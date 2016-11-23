@@ -1,0 +1,5 @@
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_02_ValueRef\bin\Debug\Aula_02_ValueRef.exe.config
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_02_ValueRef\bin\Debug\Aula_02_ValueRef.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_02_ValueRef\bin\Debug\Aula_02_ValueRef.pdb
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_02_ValueRef\obj\Debug\Aula_02_ValueRef.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_02_ValueRef\obj\Debug\Aula_02_ValueRef.pdb

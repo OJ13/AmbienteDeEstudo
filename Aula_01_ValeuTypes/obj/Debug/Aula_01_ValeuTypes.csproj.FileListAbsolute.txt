@@ -1,0 +1,6 @@
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_01_ValeuTypes\bin\Debug\Aula_01_ValeuTypes.exe.config
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_01_ValeuTypes\bin\Debug\Aula_01_ValeuTypes.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_01_ValeuTypes\bin\Debug\Aula_01_ValeuTypes.pdb
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_01_ValeuTypes\obj\Debug\Aula_01_ValeuTypes.csprojResolveAssemblyReference.cache
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_01_ValeuTypes\obj\Debug\Aula_01_ValeuTypes.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_01_ValeuTypes\obj\Debug\Aula_01_ValeuTypes.pdb

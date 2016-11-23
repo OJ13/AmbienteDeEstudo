@@ -1,0 +1,6 @@
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_04_ConstrutoresEOverloads\bin\Debug\Aula_04_ConstrutoresEOverloads.exe.config
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_04_ConstrutoresEOverloads\bin\Debug\Aula_04_ConstrutoresEOverloads.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_04_ConstrutoresEOverloads\bin\Debug\Aula_04_ConstrutoresEOverloads.pdb
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_04_ConstrutoresEOverloads\obj\Debug\Aula_04_ConstrutoresEOverloads.csprojResolveAssemblyReference.cache
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_04_ConstrutoresEOverloads\obj\Debug\Aula_04_ConstrutoresEOverloads.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\C#_Avancado\Projeto_Curso_Avancado\Aula_04_ConstrutoresEOverloads\obj\Debug\Aula_04_ConstrutoresEOverloads.pdb

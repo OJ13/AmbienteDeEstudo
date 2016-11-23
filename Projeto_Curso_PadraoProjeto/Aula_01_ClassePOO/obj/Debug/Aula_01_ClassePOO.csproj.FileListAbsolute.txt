@@ -1,0 +1,6 @@
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\Projeto_Curso_PadraoProjeto\Aula_01_ClassePOO\bin\Debug\Aula_01_ClassePOO.exe.config
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\Projeto_Curso_PadraoProjeto\Aula_01_ClassePOO\bin\Debug\Aula_01_ClassePOO.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\Projeto_Curso_PadraoProjeto\Aula_01_ClassePOO\bin\Debug\Aula_01_ClassePOO.pdb
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\Projeto_Curso_PadraoProjeto\Aula_01_ClassePOO\obj\Debug\Aula_01_ClassePOO.csprojResolveAssemblyReference.cache
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\Projeto_Curso_PadraoProjeto\Aula_01_ClassePOO\obj\Debug\Aula_01_ClassePOO.exe
+C:\GTP Black\Aulas e Treinamentos\Desenvolvimento\Projeto_Curso_PadraoProjeto\Aula_01_ClassePOO\obj\Debug\Aula_01_ClassePOO.pdb
